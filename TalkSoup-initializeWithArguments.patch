@@ -1,0 +1,27 @@
+diff -ur o-TalkSoup-0.81/Source/main.m TalkSoup-0.81/Source/main.m
+--- o-TalkSoup-0.81/Source/main.m	2003-06-16 00:03:41.000000000 -0600
++++ TalkSoup-0.81/Source/main.m	2004-11-21 15:58:49.187827706 -0700
+@@ -25,6 +25,7 @@
+ #include <Foundation/NSDictionary.h>
+ #include <Foundation/NSRunLoop.h>
+ #include <Foundation/NSHost.h>
++#include <Foundation/NSProcessInfo.h>
+ 
+ #include <Foundation/NSEnumerator.h>
+ 
+@@ -64,9 +65,14 @@
+ 	return obj;
+ }
+ 
+-int main(void)
++int main(int argc, const char* argv[], const char* env[])
+ {
+ 	NSDictionary *defaultPlugins;
++
++#ifdef GS_PASS_ARGUMENTS
++	[NSProcessInfo initializeWithArguments: argv count: argc environment: env];
++#endif
++
+ 	CREATE_AUTORELEASE_POOL(apr);
+ 
+ 	[NSObject enableDoubleReleaseCheck: YES];
