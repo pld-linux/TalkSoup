@@ -39,7 +39,7 @@ Requires:	%{name} = %{version}
 %description devel
 TalkSoup framework and headers for IRC apps.
 
-%description devel
+%description devel -l pl
 Struktura i pliki nag³ówkowe TalkSoup dla aplikacji IRC.
 
 %prep
