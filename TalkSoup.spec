@@ -13,26 +13,34 @@ Requires:	gnustep-gui >= 0.8.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		libcombo	gnu-gnu-gnu
-%define		gsos		  linux-gnu
+%define		gsos		linux-gnu
 %ifarch %{ix86}
-%define		gscpu		  ix86
+%define		gscpu		ix86
 %else
 # also s/alpha.*/alpha/, but we use only "alpha" arch for now
-%define		gscpu		  %{_target_cpu}
+%define		gscpu		%{_target_cpu}
 %endif
-%define   gstriple  %{gscpu}/%{gsos}/%{libcombo}
-%define		appdir	%{_libdir}/GNUstep/System/Applications/%{name}.app
+%define		gstriple	%{gscpu}/%{gsos}/%{libcombo}
+%define		appdir		%{_libdir}/GNUstep/System/Applications/%{name}.app
 %define		supportdir	%{_libdir}/GNUstep/System/Library/ApplicationSupport/%{name}
 
 %description
 TalkSoup is a simple IRC client for GNUstep.
 
+%description -l pl
+TalkSoup jest prostym klientem IRC dla GNUstepa.
+
 %package devel
-Group:   Development/Libraries
-Summary: Headers and Framework for IRC apps
+Group:		Development/Libraries
+Summary:	Headers and framework for IRC apps
+Summary(pl):	Pliki nag³ówkowe i struktura dla aplikacji IRC
+Requires:	%{name} = %{version}
 
 %description devel
-TalkSoup framework and headers for IRC apps
+TalkSoup framework and headers for IRC apps.
+
+%description devel
+Struktura i pliki nag³ówkowe TalkSoup dla aplikacji IRC.
 
 %prep
 %setup -q 
