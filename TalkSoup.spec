@@ -43,7 +43,7 @@ TalkSoup framework and headers for IRC apps.
 Struktura i pliki nag³ówkowe TalkSoup dla aplikacji IRC.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 . %{_libdir}/GNUstep/System/Library/Makefiles/GNUstep.sh
