@@ -2,7 +2,7 @@ Summary:	IRC for GNUstep
 Summary(pl):	Program do IRC dla GNUstepa
 Name:		TalkSoup
 Version:	0.81
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://www.linuks.mine.nu/andy/files/talksoup/%{name}-%{version}.tar.gz
