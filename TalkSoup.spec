@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://www.linuks.mine.nu/andy/files/talksoup/%{name}-%{version}.tar.gz
 # Source0-md5:	5b0671a5d6ea227ba0ccef495052763e
+Patch0:		%{name}-initializeWithArguments.patch
 URL:		http://www.linuks.mine.nu/andy/talksoup/
 BuildRequires:	gnustep-gui-devel >= 0.8.7
 Requires:	gnustep-gui >= 0.8.7
@@ -44,6 +45,7 @@ Struktura i pliki nag³ówkowe TalkSoup dla aplikacji IRC.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 . %{_libdir}/GNUstep/System/Library/Makefiles/GNUstep.sh
