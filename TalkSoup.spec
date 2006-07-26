@@ -32,9 +32,9 @@ TalkSoup is a simple IRC client for GNUstep.
 TalkSoup jest prostym klientem IRC dla GNUstepa.
 
 %package devel
-Group:		Development/Libraries
 Summary:	Headers and framework for IRC apps
 Summary(pl):	Pliki nag³ówkowe i struktura dla aplikacji IRC
+Group:		Development/Libraries
 Requires:	%{name} = %{version}
 
 %description devel
@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{appdir}
 %dir %{supportdir}
 %attr(755,root,root) %{supportdir}/*/*/%{gstriple}/*
-%attr(644,root,root) %{supportdir}/*/*/Resources/*
+%{supportdir}/*/*/Resources/*
 %attr(755,root,root) %{appdir}/%{name}
 %dir %{appdir}/Resources
 %{appdir}/Resources/*.desktop
