@@ -35,7 +35,7 @@ TalkSoup jest prostym klientem IRC dla GNUstepa.
 Summary:	Headers and framework for IRC apps
 Summary(pl):	Pliki nag³ówkowe i struktura dla aplikacji IRC
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 TalkSoup framework and headers for IRC apps.
