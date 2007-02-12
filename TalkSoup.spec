@@ -1,5 +1,5 @@
 Summary:	IRC for GNUstep
-Summary(pl.UTF-8):   Program do IRC dla GNUstepa
+Summary(pl.UTF-8):	Program do IRC dla GNUstepa
 Name:		TalkSoup
 Version:	0.81
 Release:	2
@@ -33,7 +33,7 @@ TalkSoup jest prostym klientem IRC dla GNUstepa.
 
 %package devel
 Summary:	Headers and framework for IRC apps
-Summary(pl.UTF-8):   Pliki nagłówkowe i struktura dla aplikacji IRC
+Summary(pl.UTF-8):	Pliki nagłówkowe i struktura dla aplikacji IRC
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
