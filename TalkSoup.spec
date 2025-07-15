@@ -45,7 +45,7 @@ Struktura i pliki nagłówkowe TalkSoup dla aplikacji IRC.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 . %{_libdir}/GNUstep/System/Library/Makefiles/GNUstep.sh
